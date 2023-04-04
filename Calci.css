@@ -17,11 +17,11 @@ h1{
 }
 
 button{
-  height: 60px;
-  font-size: 2em;
+  height: 50px;
+  font-size: 1.5em;
   color: #333;
   background-color: #a3a3a3;
-  width: 60px;
+  width: 50px;
   border: none;
   outline: none;
   border: 2px #fff;
