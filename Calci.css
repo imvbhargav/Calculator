@@ -121,3 +121,13 @@ input{
   background-color: #000;
   color: #fff;
 }
+
+@media only screen and (max-width: 600px) {
+  body{
+    margin-top: 0;
+  }
+  .mbl-size{
+    margin: 0 auto;
+    max-width: 320px;
+  }
+}
