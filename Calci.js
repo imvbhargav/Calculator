@@ -1,10 +1,18 @@
-
+  let op = 0;
+  let opr = '';
 
 
 /*------Display Screen------*/
 var ds=document.getElementById('display-screen');
 function put(nom){
-  ds.value+=nom;
+  if (typeof nom == "number"){
+    op += nom
+  }
+  if (typeof nom == "string" && op != 0){
+    ds.value = ds.value + op + opr;
+    op = 0;
+    opr = '';
+  }
   scroll();
 }
 
