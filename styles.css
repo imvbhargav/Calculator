@@ -3,12 +3,19 @@
 body{
   background-color: #000;
   position: fixed;
-  width: 100vw;
-  margin-top: 100px;
 }
+
+.flex{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .containerm{
   margin: 0;
-  width: 100%;
+  width: 95%;
+  border-radius: 50px;
 }
 
 h1{
@@ -17,25 +24,18 @@ h1{
 }
 
 button{
-  height: 50px;
-  font-size: 1.5em;
-  color: #333;
-  background-color: #a3a3a3;
-  width: 50px;
-  border: none;
-  outline: none;
-  border: 2px #fff;
-  border-radius: 50px;
-  position:relative;
+    height: 50px;
+    font-size: 1.5em;
+    color: #333;
+    background-color: #a3a3a3;
+    width: 50px;
+    border: none;
+    outline: none;
+    border: 2px #fff;
+    border-radius: 50px;
+    position: relative;
 }
 
-.mbl-size{
-  margin: 0 auto;
-  max-width: 320px;
-  border: 5px solid gray;
-  padding: 20px;
-  border-radius: 25px;
-}
 
 button::before,
 button::after
@@ -72,23 +72,21 @@ button:active{
 .keys{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
-  padding: 20px;
+  grid-gap: 14px;
+  padding: 50px;
   
 }
 
 input{
-  text-align: right;
-  padding: 20px;
-  width: 80%;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-size: 30px;
-  background-color: #000;
-  outline: none;
-  border: none;
-  border-radius: 30px;
-  color: #fff;
+    text-align: right;
+    padding: 50px 50px 50px 50px;
+    font-size: 30px;
+    background-color: #000;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    width: 71%;
 }
 
 .clear:active{
@@ -103,13 +101,8 @@ input{
 
 .mode{
   border-radius: 10px;
-  /*width: 60px;
-  height: 30px;*/
   font-size: 10px;
   background-color: #fff;
- /* position: absolute;
-  bottom: 0;
-  right: 0;*/
 }
 
 .mode::before,
@@ -122,16 +115,8 @@ input{
   color: #fff;
 }
 
-@media only screen and (max-width: 600px) {
-  body{
-    margin-top: 0;
-  }
-  .mbl-size{
-    margin: 0 auto;
-    max-width: 320px;
-    border: none;
-  }
-  .keys{
-    margin-top: 5px;
-    padding: 0;
+@media only screen and (max-width: 600px){
+    input{
+        font-size: 20px;
+    }
 }
