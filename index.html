@@ -1,41 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link href="Calci.css" rel=stylesheet type="text/css"/>
-    <title>Simple Calculator</title
+    <link href="styles.css" rel=stylesheet type="text/css"/>
+    <title>Simple Calculator</title>
   </head>
   <body>
-    <div class="mbl-size">
-    <div class="containerm">
-      <h1>Simple Calculator</h1>
-      <input id="display-screen" type="text" name="Display" id="display" value=""  length="100000" disabled/>
-      <div class="keys">
-        <button onclick="put('+')" class="ope" type="button" value="+">+</button>
-        <button onclick="put('-')" class="ope" type="button" value="-">-</button>
-        <button onclick="put('*')" class="ope" type="button" value="*">&times;</button>
-        <button onclick="put('/')" class="ope" type="button" value="/">&divide;</button>
-        <button onclick="put('7')" type="button" value="7">7</button>
-        <button onclick="put('8')" type="button" value="8">8</button>
-        <button onclick="put('9')" type="button" value="9">9</button>
-        <button id="clear" class="clear" type="button" value="c">C</button>
-        <button onclick="put('4')" type="button" value="4">4</button>
-        <button onclick="put('5')" type="button" value="5">5</button>
-        <button onclick="put('6')" type="button" value="6">6</button>
-        <button id="ac" class="clear" type="button" value="ac">AC</button>
-        <button onclick="put('1')" type="button" value="1">1</button>
-        <button onclick="put('2')" type="button" value="2">2</button>
-        <button onclick="put('3')" type="button" value="3">3</button>
-        <button onclick="modechange()" id="mode" class="mode">Light Mode</button>
-        <button onclick="put('.')" type="button" value=".">.</button>
-        <button onclick="put('0')" type="button" value="0">0</button>
-        <button id="equal" class="equal" type="button" value="=">=</button>
-      </div>
+    <div class="flex">
+        <div>
+            <h1> Simple Calculator</h1>
+            <div class="containerm">
+                <input id="display" type="text" name="Display" value="0"  length="100000" disabled/>
+                <div class="keys">
+                    <button id="add" onclick="put('+')" class="ope" type="button" value="+">+</button>
+                    <button id="subtract" onclick="put('-')" class="ope" type="button" value="-">-</button>
+                    <button id="multiply" onclick="put('*')" class="ope" type="button" value="*">&times;</button>
+                    <button id="divide" onclick="put('/')" class="ope" type="button" value="/">&divide;</button>
+                    <button id="seven" onclick="put('7')" type="button" value="7">7</button>
+                    <button id="eight" onclick="put('8')" type="button" value="8">8</button>
+                    <button id="nine" onclick="put('9')" type="button" value="9">9</button>
+                    <button id="remove" class="clear" type="button" value="c">C</button>
+                    <button id="four" onclick="put('4')" type="button" value="4">4</button>
+                    <button id="five" onclick="put('5')" type="button" value="5">5</button>
+                    <button id="six" onclick="put('6')" type="button" value="6">6</button>
+                    <button id="clear" class="clear" type="button" value="ac">AC</button>
+                    <button id="one" onclick="put('1')" type="button" value="1">1</button>
+                    <button id="two" onclick="put('2')" type="button" value="2">2</button>
+                    <button id="three" onclick="put('3')" type="button" value="3">3</button>
+                    <button onclick="modechange()" id="mode" class="mode">Light Mode</button>
+                    <button id="decimal" onclick="put('.')" type="button" value=".">.</button>
+                    <button id="zero" onclick="put('0')" type="button" value="0">0</button>
+                    <button id="equals" class="equal" type="button" value="=">=</button>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-    <!--<button onclick="modechange()" id="mode" class="mode">Light Mode</button>-->
-    
-    <script src="Calci.js" type="text/javascript" charset="utf-8"></script>
+    <script src="app.js" type="text/javascript" charset="utf-8"></script>
   </body>
 </html>
