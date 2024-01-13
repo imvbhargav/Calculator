@@ -20,3 +20,6 @@
 13. If 2 or more operators are entered consecutively, the operation performed should be the last operator entered (excluding the negative (-) sign.638ms
 14. Pressing an operator immediately following "=" should start a new calculation that operates on the result of the previous evaluation425ms
 15. My calculator should have several decimal places of precision when it comes to rounding (note that there is no exact standard, but you should be able to handle calculations like "2 / 7" with reasonable precision to at least 4 decimal places)203ms
+
+<br>
+<a href="https://imvbhargav/github.io/Calculator">Deployed with GitHub Pages</a>
