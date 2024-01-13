@@ -11,15 +11,15 @@
 4. My calculator should contain a clickable element containing a "." (decimal point) symbol with a corresponding id="decimal"
 5. My calculator should contain a clickable element with an id="clear"
 6. My calculator should contain an element to display values with a corresponding id="display"
-7. At any time, pressing the clear button clears the input and output values, and returns the calculator to its initialized state; 0 should be shown in the element with the id of "display"214ms
-8. As I input numbers, I should be able to see my input in the element with the id of "display"202ms
-9. In any order, I should be able to add, subtract, multiply and divide a chain of numbers of any length, and when I hit "=", the correct result should be shown in the element with the id of "display"423ms
-10. When inputting numbers, my calculator should not allow a number to begin with multiple zeros.217ms
-11. When the decimal element is clicked, a "." should append to the currently displayed value; two "." in one number should not be accepted625ms
-12. I should be able to perform any operation (+, -, *, /) on numbers containing decimal points840ms
-13. If 2 or more operators are entered consecutively, the operation performed should be the last operator entered (excluding the negative (-) sign.638ms
-14. Pressing an operator immediately following "=" should start a new calculation that operates on the result of the previous evaluation425ms
-15. My calculator should have several decimal places of precision when it comes to rounding (note that there is no exact standard, but you should be able to handle calculations like "2 / 7" with reasonable precision to at least 4 decimal places)203ms
+7. At any time, pressing the clear button clears the input and output values, and returns the calculator to its initialized state; 0 should be shown in the element with the id of "display" 214ms
+8. As I input numbers, I should be able to see my input in the element with the id of "display" 202ms
+9. In any order, I should be able to add, subtract, multiply and divide a chain of numbers of any length, and when I hit "=", the correct result should be shown in the element with the id of "display" 423ms
+10. When inputting numbers, my calculator should not allow a number to begin with multiple zeros. 217ms
+11. When the decimal element is clicked, a "." should append to the currently displayed value; two "." in one number should not be accepted 625ms
+12. I should be able to perform any operation (+, -, *, /) on numbers containing decimal points 840ms
+13. If 2 or more operators are entered consecutively, the operation performed should be the last operator entered (excluding the negative (-) sign. 638ms
+14. Pressing an operator immediately following "=" should start a new calculation that operates on the result of the previous evaluation 425ms
+15. My calculator should have several decimal places of precision when it comes to rounding (note that there is no exact standard, but you should be able to handle calculations like "2 / 7" with reasonable precision to at least 4 decimal places) 203ms
 
 *** 
 
