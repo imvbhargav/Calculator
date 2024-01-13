@@ -150,8 +150,16 @@ function put(nom){
 
   // If input is not Zero then allow input and set corresponding flags
   else if (!afterOperator && intialNum && nom != "0" && !isOperator(nom)){
+    if (intialNum && ds.value === "0" && nom === "."){
+      ds.value = "0"
+      ds.value += nom;
+      previousEnableDecimal = enableDecimal;
+      enableDecimal = false;
+    }
+    else{
+      ds.value = nom;
+    }
     handleInputValues(nom)
-    ds.value = nom;
     previousinitialNum = intialNum;
     intialNum = false;
     return;
@@ -159,7 +167,7 @@ function put(nom){
 
   // If input is not zero or operator and input is after operator and initial input then
   // 1. If last value is 0 and not "." then remove zero and append the number
-  else if (afterOperator && intialNum && nom != "0" && !isOperator(nom)){
+  else if (afterOperator && intialNum && nom != "0" && !isOperator(nom) && nom !== "."){
     handleInputValues(nom)
     if (getLastValueOf(ds.value) === "0" && nom !== "."){
       ds.value = ds.value.slice(0, -1);
@@ -241,6 +249,9 @@ function put(nom){
   // If input value is decimal then add decimal and
   // => set enableDecimal flag to false 
   else if (nom === "."){
+    if (isOperator(getLastValueOf(ds.value))){
+      ds.value += "0"
+    }
     previousEnableDecimal = enableDecimal;
     enableDecimal = false;
   }
@@ -281,8 +292,14 @@ const handleClearForCalculation = () => {
 function clearEventHandle() {
   var str = ds.value;
   afterOperator = previousAfterOperator;
-  enableDecimal = previousEnableDecimal;
   handleClearForCalculation()
+  if (getLastValueOf(ds.value) === "."){
+    previousEnableDecimal = enableDecimal;
+    enableDecimal = true;
+  }
+  if (isOperator(getLastValueOf(ds.value))){
+    enableDecimal = previousEnableDecimal;
+  }
   ds.value = str.slice(0, str.length-1);
   if (ds.value == ''){
     isBeginning = true;
