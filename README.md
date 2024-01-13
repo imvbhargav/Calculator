@@ -53,7 +53,7 @@ Here are some use cases (abilities your project needs to have):
      - Add a “backspace” button, so the user can undo if they click the wrong number.
      - Add keyboard support! You might run into an issue where keys such as (/) might cause you some trouble. Read the MDN documentation for event.preventDefault to help solve this problem.
 ***
-### NOTE: _This app does not fulfill all conditions of The Odin Project as the main focus is on freeCodeCamp, The Odin Project is just a addtional_
+###### NOTE: _This app does not fulfill all conditions of The Odin Project as the main focus is on freeCodeCamp, The Odin Project is just a addtional_
 ***
 
 [Deployed with GitHub Pages](https://imvbhargav/github.io/Calculator)
