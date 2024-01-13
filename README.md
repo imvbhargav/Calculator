@@ -56,4 +56,4 @@ Here are some use cases (abilities your project needs to have):
 ###### NOTE: _This app does not fulfill all conditions of The Odin Project as the main focus is on freeCodeCamp, The Odin Project is just an additional add on, hence fulfils some very useful features only._
 ***
 
-[Deployed with GitHub Pages](https://imvbhargav/github.io/Calculator)
+[Deployed with GitHub Pages](https://imvbhargav.github.io/Calculator)
